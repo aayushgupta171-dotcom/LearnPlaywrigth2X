@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffcb2b" />
+      <stop offset="100%" stop-color="#ff6f3c" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="120" rx="20" ry="20" fill="#252b33" />
+  <rect x="12" y="12" width="376" height="96" rx="16" ry="16" fill="url(#grad)" opacity="0.95" />
+  <text x="50%" y="52" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#111">Learn</text>
+  <text x="50%" y="82" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#111">Playwright 2X</text>
+  <circle cx="340" cy="70" r="14" fill="#111" />
+  <text x="340" y="75" text-anchor="middle" font-size="16" fill="#ffcb2b" font-family="Segoe UI, Arial, sans-serif">JS</text>
+</svg>

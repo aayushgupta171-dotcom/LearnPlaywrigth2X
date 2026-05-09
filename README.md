@@ -1,10 +1,17 @@
 # JavaScript Learning Repository
 
+![LearnPlaywright2X Logo](logo.svg)
+
 This repository contains hands-on JavaScript learning material organized into chapters covering the fundamentals, core concepts, and identifier rules.
 
 ## Chapters
 
+![LearnPlaywright2X Logo](logo.svg)
+
 ### 1. Basics
+
+![LearnPlaywright2X Logo](logo.svg)
+
 - `Chapter_01_Basics/`
 - Learn the foundational concepts of JavaScript including basic syntax, core concepts, environment setup verification, and performance-oriented code patterns.
 - Example files:
@@ -14,12 +21,18 @@ This repository contains hands-on JavaScript learning material organized into ch
   - `04_HotCode.js`
 
 ### 2. JavaScript Concepts
+
+![LearnPlaywright2X Logo](logo.svg)
+
 - `Chapter_02_javascript_concepts/`
 - Dive deeper into JavaScript fundamentals with additional examples and explanations.
 - Example files:
   - `05_JS_Basics.js`
 
 ### 3. Identifiers, Literals & Comments
+
+![LearnPlaywright2X Logo](logo.svg)
+
 - `Chapter_03_identifiers_Literals/`
 - Master the art of naming variables and functions, including valid identifier rules, naming conventions, comments, and literals.
 - Example files:
@@ -29,16 +42,23 @@ This repository contains hands-on JavaScript learning material organized into ch
   - `js_identifier_rules.js`
 
 ### VS Code Keyboard Shortcuts
+
+![LearnPlaywright2X Logo](logo.svg)
+
 - [macOS shortcuts](Chapter_03_identifiers_Literals/VS_Code_keyboard_shortcut_mac.md)
 - [Windows shortcuts](Chapter_03_identifiers_Literals/VS_Code_keyboard_shortcut_windows.md)
 
 ## Repository Structure
+
+![LearnPlaywright2X Logo](logo.svg)
 
 - `Chapter_01_Basics/` - Basic JavaScript examples and syntax practice.
 - `Chapter_02_javascript_concepts/` - Core JavaScript concept exercises and examples.
 - `Chapter_03_identifiers_Literals/` - Identifier rules, naming conventions, comments, and VS Code shortcut guides.
 
 ## File Naming Convention
+
+![LearnPlaywright2X Logo](logo.svg)
 
 Files in this repository follow a numbered chapter structure for easy navigation:
 
@@ -48,9 +68,13 @@ Where `XX` is a two-digit number indicating the learning sequence.
 
 ## Contributing
 
+![LearnPlaywright2X Logo](logo.svg)
+
 This is a personal learning repository. Suggestions and improvements are welcome!
 
 ## License
+
+![LearnPlaywright2X Logo](logo.svg)
 
 This project is for personal learning and educational purposes.
 
@@ -62,6 +86,8 @@ Enjoy exploring the code and learning something new every day.
 
 ## Topic Overview
 
+![LearnPlaywright2X Logo](logo.svg)
+
 | Topic | Description |
 | --- | --- |
 | JavaScript Basics | Variables, data types, operators |
@@ -72,6 +98,9 @@ Enjoy exploring the code and learning something new every day.
 | VS Code Shortcuts | Productivity boost with keyboard shortcuts |
 
 ## How to Use
+
+![LearnPlaywright2X Logo](logo.svg)
+
 1. Open the repository in your code editor.
 2. Explore each chapter folder.
 3. Run example files with Node.js using `node <filename>.js`.

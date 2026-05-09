@@ -89,8 +89,8 @@ VS Code	Productivity shortcuts
 
 ⌨️ VS Code Shortcuts
 
-Windows shortcuts available in repo
-macOS shortcuts available in repo
+[Windows shortcuts available in repo](Chapter_03_identifiers_Literals/VS_Code_keyboard_shortcut_windows.md)
+[macOS shortcuts available in repo](Chapter_03_identifiers_Literals/VS_Code_keyboard_shortcut_mac.md)
 
 📝 File Naming Convention
 

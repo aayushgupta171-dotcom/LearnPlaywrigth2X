@@ -1,22 +1,29 @@
 LearnPlaywright/
 │
-├── Chapter_01_BasicsJS/
-├── Chapter_02_Javascript_Concepts/
-├── Chapter_03_Identifier_Literals/
+├── Chapter_01_Basics/
+├── Chapter_02_javascript_concepts/
+├── Chapter_03_identifiers_Literals/
+├── chapter_04_Javascript_Concepts/
+├── chapter_05_Literal/
+├── chapter_06_Operator/
+├── chapter_07_If_else/
+├── chapter_08_Switch_Statement/
+├── chapter_09_UserInpu/
+├── chapter_10_Loops/
 └── README.md
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### 📌 Prerequisites
+### Prerequisites
 - [Node.js (v14 or higher recommended)](https://nodejs.org/)
 - [Visual Studio Code (recommended)](https://code.visualstudio.com/)
 - [Git](https://git-scm.com/)
 
 ---
 
-### ⚙️ Installation
+### Installation
 
 Clone the repository:
 ```bash
@@ -38,12 +45,12 @@ code .
 Run JavaScript file:
 
 ```bash
-node Chapter_01_BasicsJS/01_Basics.js
+node Chapter_01_Basics/01_Basics.js
 ```
 
-📚 Chapter Overview
+## Chapter Overview
 
-📖 Chapter 01 — Basics of JavaScript
+### Chapter 01 — Basics of JavaScript
 
 Learn foundational JavaScript concepts:
 
@@ -53,14 +60,14 @@ Learn foundational JavaScript concepts:
 - Setup verification
 - Performance examples
 
-📘 Chapter 02 — JavaScript Concepts
+### Chapter 02 — JavaScript Concepts
 
 - Functions
 - Loops
 - Conditionals
 - Core logic building
 
-🎯 Chapter 03 — Identifiers, Literals & Comments
+### Chapter 03 — Identifiers, Literals & Comments
 
 - Identifier rules
 - Naming conventions:
@@ -77,22 +84,84 @@ Learn foundational JavaScript concepts:
 - Comments (single, multi-line, JSDoc)
 - VS Code shortcuts
 
-🎯 Topics Covered
+### Chapter 04 — JavaScript Concepts (var, let, const)
 
-Topic	Description
-JavaScript	Basics, syntax, variables
-Concepts	Functions, loops, conditions
-Identifiers	Naming rules and best practices
-Naming Cases	All major naming conventions in JS
-Comments	Code documentation techniques
-VS Code	Productivity shortcuts
+- var, let, const declarations
+- Function scope vs block scope
+- Hoisting
+- Temporal Dead Zone
+- Scope chaining
 
-⌨️ VS Code Shortcuts
+### Chapter 05 — Literals
+
+- Literal types
+- null vs undefined
+- Number literals
+- String literals
+- Template literals
+- Backtick, single & double quotes
+
+### Chapter 06 — Operators
+
+- Arithmetic operators
+- Modulus operator
+- Exponentiation operator
+- Comparison operators (strict vs loose)
+- Logical operators
+- String concatenation operators
+- Ternary operator
+- typeof operator
+- Increment/Decrement operators
+- Nullish coalescing
+
+### Chapter 07 — If Else
+
+- if, else if, else statements
+- Real-world examples
+- API response handling
+- Even/Odd check
+- Grade calculation
+- Leap year check
+
+### Chapter 08 — Switch Statement
+
+- Switch case syntax
+- Break statement importance
+- Default case
+- Real-time examples
+- Switch case grouping
+
+### Chapter 09 — User Input
+
+- User input handling
+- Node.js readline module
+- prompt-sync package
+
+### Chapter 10 — Loops
+
+- for loop
+- while loop
+- do...while loop
+- for...of, for...in, forEach
+- Loop-based interview questions
+
+## Topics Covered
+
+| Topic | Description |
+|-------|-------------|
+| JavaScript | Basics, syntax, variables |
+| Concepts | Functions, loops, conditions |
+| Identifiers | Naming rules and best practices |
+| Naming Cases | All major naming conventions in JS |
+| Comments | Code documentation techniques |
+| VS Code | Productivity shortcuts |
+
+## VS Code Shortcuts
 
 [Windows shortcuts available in repo](Chapter_03_identifiers_Literals/VS_Code_keyboard_shortcut_windows.md)
 [macOS shortcuts available in repo](Chapter_03_identifiers_Literals/VS_Code_keyboard_shortcut_mac.md)
 
-📝 File Naming Convention
+## File Naming Convention
 
 All files follow structured naming:
 
@@ -103,16 +172,16 @@ Where:
 - `XX` = learning order number
 - `DescriptiveName` = file purpose
 
-🤝 Contributing
+## Contributing
 
 This is a personal learning repository. Suggestions are welcome.
 
-📄 License
+## License
 
 This project is for educational and learning purposes only.
 
-🚀 Happy Learning!
+## Happy Learning!
 
-Keep coding, keep growing 💡
+Keep coding, keep growing
 
--Ayush Kumar
+- Ayush Kumar

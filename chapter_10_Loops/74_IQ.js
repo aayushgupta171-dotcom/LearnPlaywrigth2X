@@ -1,9 +1,9 @@
-// // for (let pramod = 0; pramod > 1; pramod++) {
-// //     console.log(pramod);
+// // for (let ayush = 0; ayush > 1; ayush++) {
+// //     console.log(ayush);
 // // }
 
-// // for (let pramod = 0; ; pramod++) {
-// //     console.log(pramod);
+// // for (let ayush = 0; ; ayush++) {
+// //     console.log(ayush);
 // // }
 
 

@@ -51,7 +51,7 @@ var ayush1232 = "hello";
 Expected output:
 
 # No console.log — file runs silently with no output.
-# Uncommenting `var 123 = 123;` or `var pramod dutta = ...` throws SyntaxError.
+# Uncommenting `var 123 = 123;` or `var ayush kumar = ...` throws SyntaxError.
 ### **07_Identifier_Part2.js**
 Walks the five naming conventions side-by-side so you can pick the right style for variables, classes, constants, and legacy code.
 

@@ -28,7 +28,7 @@ Template literals — ${var} interpolation, ${a + b} expressions, multiline stri
 22_Literal.js
 Five primitive literals stitched together with typeof — the SDET's first peek at what JS calls each value.
 
-let age = "pramod"; // This is a string literal assigned to the variable 'age'.
+let age = "ayush"; // This is a string literal assigned to the variable 'age'.
 let isStudent = true; // This is a boolean literal assigned to the variable 'isStudent'.
 let pi = 3.14; // This is a numeric literal assigned to the variable 'pi'.
 let name = 'Alice'; // This is a string literal assigned to the variable 'name'.
@@ -78,8 +78,8 @@ Value is: hello
 24_null.js
 Quick sanity check — empty string and zero are still typed as string and number. They're falsy, not "empty."
 
-let no_audi_pramod_sir_has = null;
-let pramod_has_two_wives;
+let no_audi_ayush_sir_has = null;
+let ayush_has_two_wives;
 
 let age = 0;
 

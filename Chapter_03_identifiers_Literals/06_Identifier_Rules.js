@@ -8,7 +8,7 @@ var ab123 = 34;
 
 var Name = "Ayush";
 var name = "Shivani";
-//var pramod dutta = "hello";
-var pramod_dutta = "hello";
-var pramod$dutta = "hello";
-var pramodu1232 = "hello";
+//var ayush kumar = "hello";
+var ayush_kumar = "hello";
+var ayush$kumar = "hello";
+var ayushu1232 = "hello";

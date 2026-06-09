@@ -37,7 +37,7 @@ This repository is your **week-by-week course companion** for the LearnPlaywrigh
 
 ```mermaid
 graph TB
-    subgraph root["LearnPlaywrightBatch2x"]
+    subgraph root["LearnPlaywrigth2X"]
         direction TB
 
         subgraph js["📘 JavaScript (Weeks 1–6)"]
@@ -53,6 +53,9 @@ graph TB
             ch10["Ch 10: Loops ✅"]
             ch11["Ch 11: Arrays ✅"]
             ch12_fn["Ch 12: Functions ✅"]
+            ch13_str["Ch 13: Strings ✅"]
+            ch14_obj["Ch 14: Objects ✅"]
+            ch15_2d["Ch 15: 2D Arrays ✅"]
         end
 
         subgraph adv["⚙️ Advanced JS (Weeks 7–8)"]
@@ -100,7 +103,7 @@ graph TB
 ## 📚 Current Folder Structure
 
 ```
-LearnPlaywrightBatch2x/
+LearnPlaywrigth2X/
 ├── chapter_01_Basics/                  ✅ Hello World, env setup, hot code
 │   ├── 01_Basics.js                    # First console.log program
 │   ├── 02_JS.js                        # Variables & a simple loop
@@ -221,7 +224,7 @@ LearnPlaywrightBatch2x/
 │   ├── 94_Concat_array.js              # concat, spread (...), join
 │   └── 95_Array_Checking.js            # Array.isArray, every, some
 │
-├── chapter_12_Funtions/                ✅ Functions — declaration, params/args, return, expressions, arrow
+├── chapter_12_Funtions/                ✅ Functions — declaration, params/args, return, expressions, arrow, IIFE, default/rest/spread, scope, closure, HOF, pure
 │   ├── 96_Functions.js                 # Define + call — first function
 │   ├── 97_Type1_Fn_Basic_Functions.js  # Type 1 — no params, no return (returns undefined)
 │   ├── 98_Type2_Fn_With_Param_No_Return.js  # Type 2 — params, no return
@@ -229,7 +232,54 @@ LearnPlaywrightBatch2x/
 │   ├── 100_Type4_Fn_With_Param_With_Return.js   # Type 4 — params + return (the standard form)
 │   ├── 101_Template_literal.js         # Return template literal — `Hello, ${name}`
 │   ├── 102_Fn_Expression.js            # Function expression — anonymous fn assigned to const
-│   └── 103_Arrow_Fn.js                 # Arrow function — concise ES6 form
+│   ├── 103_Arrow_Fn.js                 # Arrow function — concise ES6 form
+│   ├── 104_Arrow_Fn_REAL.js            # Real-world: validateStatusCode in all 3 forms
+│   ├── 105_IIFE.js                     # Immediately Invoked Function Expression — runs once, on definition
+│   ├── 106_Default_Param_Fn.js         # Default parameters — `function retry(name, max = 3)`
+│   ├── 107_IQ.js                       # Param + return basic IQ — runTest formatter
+│   ├── 108_Rest_Param_Fn.js            # Rest parameters — `...results` collects extras
+│   ├── 109_IQ.js                       # IQ trap — calling const-expr before declaration → TDZ
+│   ├── 110_Spead_IQ.js                 # Spread `...arr` at call-site + rest at definition
+│   ├── 111_Scope._Fn.js                # Scope — global vs local, what a function can reach
+│   ├── 112_IQ.js                       # IQ — nested scope, inner is not visible from outer
+│   ├── 113_Closure.js                  # Closure — inner function remembers outer variables
+│   ├── 114_Closure.js                  # Closure for state — counter (increment/decrement/get)
+│   ├── 115_API_REAL_Closure.js         # Real-world closure — retry tracker per test
+│   ├── 116_Higher_Order_Fn.js          # Higher-Order Function — takes/returns a function
+│   └── 117_Pure_Fn.js                  # Pure functions — same input → same output, no side effects
+│
+├── chapter_13_Strings/                 ✅ Strings — quotes, template literals, properties, search, slice, transform, conversion
+│   ├── 118_Strings.js                  # Single/double quotes, template literals, multiline, String()
+│   ├── 119_String_Properties.js        # length, index access, .at() negative, charAt, charCodeAt
+│   ├── 120_Search_Check_Str.js         # includes, startsWith/endsWith, indexOf/lastIndexOf, search(regex)
+│   ├── 121_Substring.js                # slice vs substring — negative index, the swap trap
+│   ├── 122_Transform_Str.js            # case, trim, replace/replaceAll, concat, split/join
+│   ├── 123_SC.js                       # String conversion — toString, Number, parseInt, parseFloat
+│   └── javascript_stringcheatsheet.md  # 📋 Full string-method cheat sheet (40+ methods, tables)
+│
+├── chapter_14_Objects/                 ✅ Objects — literals, access, ref vs primitive, destructuring, spread, get/set, this
+│   ├── 124_Objects.js                  # Object literal, keys/values, JSON vs JS object
+│   ├── 125_Objects2.js                 # key:value pairs, copy by reference, === on objects
+│   ├── 126_Objects_Creation.js         # Two identical literals are NOT === (different references)
+│   ├── 127_Objects_REAL.js             # Build config object dynamically, dot access, delete
+│   ├── 128_Primitive_Ref.js            # 🔥 Primitive (copy by value) vs Reference (copy by ref)
+│   ├── 129_Ob_Examples.js              # JSON-style "quoted keys" vs JS unquoted keys
+│   ├── 130_IQ.js                       # Dynamic property access obj[key], getOwnPropertyDescriptor
+│   ├── 131_Object_Fn.js                # Methods on objects — add(n), subtract(n)
+│   ├── 132_Obj_Decon.js                # Destructuring — rename, defaults, nested
+│   ├── 133_Spead.js                    # Spread {...obj} copy, const blocks reassignment
+│   ├── 134_Objects_GET_SET_Methods.js  # get/set accessors + `this`
+│   ├── 135_IQ                          # Object.keys/values/entries + for...in
+│   ├── 136_Obj_REAL.js                 # Real test config — ENV, expected response, nested objects
+│   └── 137_Let_const_obj.js            # let vs const for objects — mutate yes, reassign no
+│
+├── chapter_15_2D_Array/                ✅ 2D Arrays — grids, nested loops, real test matrices, patterns
+│   ├── 138_2D_Array.js                 # Grid literal, nested for loop, grid[i][j] access
+│   ├── 139_2d.js                       # Rows × cols, grid.length vs grid[0].length
+│   ├── 140_REAL.js                     # Test matrix — for, for-of, forEach printing (write vs log)
+│   ├── 141_2d_Array_Fn.js              # map + reduce row sums, find failed test cases
+│   ├── 142_IQ_Right_Pattern_Py.js      # IQ — right-triangle star pattern with nested loops
+│   └── testdata.csv                    # Sample CSV — username, password, expected_Result
 │
 └── README.md                           👋 You are here
 ```
@@ -258,7 +308,7 @@ LearnPlaywrightBatch2x/
 ```bash
 # 1. Clone the repository
 git clone https://github.com/aayushgupta171-dotcom/LearnPlaywrigth2X.git
-cd LearnPlaywrightBatch2x
+cd LearnPlaywrigth2X
 
 # 2. Verify your setup
 node chapter_01_Basics/03_JS_Verify_Setup.js
@@ -2281,7 +2331,7 @@ node chapter_12_Funtions/99_Type3_Fn_without_Param_Return_Type.js # → "Hi" the
 node chapter_12_Funtions/100_Type4_Fn_With_Param_With_Return.js   # → 9
 node chapter_12_Funtions/101_Template_literal.js               # → "Hello, Alice"
 node chapter_12_Funtions/102_Fn_Expression.js                  # → "Hello, Ayush Kumar"
-node chapter_12_Funtions/103_Arrow_Fn.js                       # → 20, then "Dutta"
+node chapter_12_Funtions/103_Arrow_Fn.js                       # → 20, then "Kumar"
 ```
 
 ---
@@ -2472,7 +2522,7 @@ const doubleIt = n => n * 2;          // implicit return
 console.log(doubleIt(10));            // 20
 
 const printIt = name => console.log(name);  // side-effect arrow
-printIt("Dutta");                     // "Dutta"
+printIt("Kumar");                     // "Kumar"
 
 // Multiple params + multi-line body
 const add = (a, b) => {
@@ -2626,7 +2676,7 @@ npx playwright show-trace <trace.zip>    # Open trace viewer
 - 🌐 [thetestingacademy.com](https://thetestingacademy.com)
 - 📚 [Playwright Docs](https://playwright.dev/docs/intro)
 - 📚 [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-- 📦 [Reference Repo — Batch 1](https://github.com/PramodDutta/LearningPlaywrightBatch)
+- 📦 [Reference Repo — Batch 1](https://github.com/aayushgupta171-dotcom/LearnPlaywrigth2X)
 
 ---
 

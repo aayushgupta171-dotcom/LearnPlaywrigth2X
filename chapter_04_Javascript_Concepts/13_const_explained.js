@@ -7,11 +7,11 @@ const BASE_URL = "https://app.thetestingacademy.com";
 let name = "pending";
 name = "done";
 {
-    let name = "Dutta";
+    let name = "Kumar";
 }
 
 function say() {
-    let name = "Dutta";
+    let name = "Kumar";
 }
 say();
 say();

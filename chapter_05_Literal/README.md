@@ -183,8 +183,8 @@ JS has no char type — a single character is still a string.
 28_Template_Literal.js
 Backticks (`) are the SDET's best friend — interpolation for env-aware API URLs, Playwright locators, screenshot paths, and log lines.
 
-let firstname = "Prrammod";
-let fullname = `Hi ${firstname} Dutta`;
+let firstname = "Ayush";
+let fullname = `Hi ${firstname} Kumar`;
 console.log(fullname);
 
 let env = "prod";
@@ -207,7 +207,7 @@ console.log(`[${status}] ${testName} completed in ${duration}s`);
 const testCase = "checkout_flow";
 const timestamp = Date.now();
 await page.screenshot({ path: `screenshots/${testCase}_${timestamp}.png` });
-Hi Prrammod Dutta
+Hi Ayush Kumar
 https://api-prod.tekion.com/users/12345
 [FAILED] Login Test completed in 2.3s
 Note: the await page.locator(...) and page.screenshot(...) lines need a Playwright page fixture — they'll throw if you node the file directly. The string composition is what matters here.

@@ -56,6 +56,9 @@ graph TB
             ch13_str["Ch 13: Strings ✅"]
             ch14_obj["Ch 14: Objects ✅"]
             ch15_2d["Ch 15: 2D Arrays ✅"]
+            ch16_cb["Ch 16: Callbacks ✅"]
+            ch17_pr["Ch 17: Promises ✅"]
+            ch18_aa["Ch 18: Async / Await ✅"]
         end
 
         subgraph adv["⚙️ Advanced JS (Weeks 7–8)"]
@@ -77,6 +80,7 @@ graph TB
         end
 
         subgraph pw["🎭 Playwright (Weeks 10–12)"]
+            pw0["Ch 19: PW Basics ✅"]
             pw1["Ch 24: PW Fundamentals"]
             cli["Lecture: Playwright CLI"]
             ai["Lecture: AI Agents"]
@@ -280,6 +284,55 @@ LearnPlaywrigth2X/
 │   ├── 141_2d_Array_Fn.js              # map + reduce row sums, find failed test cases
 │   ├── 142_IQ_Right_Pattern_Py.js      # IQ — right-triangle star pattern with nested loops
 │   └── testdata.csv                    # Sample CSV — username, password, expected_Result
+│
+├── chapter_16_Callback/                ✅ Callbacks — pass-a-function, sync vs async, callback hell
+│   ├── 143_Callback.js                 # Callback basics — named, anonymous, arrow forms
+│   ├── 144_CB.js                       # test('title', () => {}) — the callback you already use
+│   ├── 145_CB_Fn.js                    # cafe(item, callWhenReady) — three ways to pass a callback
+│   ├── 146_PW_CB.js                    # Mini Playwright test() — testName + callback pattern
+│   ├── 147_JS_CB.js                    # setTimeout — why Test 3 prints before Test 2
+│   ├── 148_Sync_CB.js                  # Synchronous callback — forEach runs in order, now
+│   ├── 149_Async_CB.js                 # Asynchronous callback — setTimeout defers to later
+│   ├── 150_CB_Hell.js                  # Callback hell — 4-step login nested pyramid
+│   ├── 151_CB_Hell_20_Steps.js         # Pyramid of Doom — 24-step E2E checkout, drifting right
+│   ├── 152_CB_Parameter.js             # Callback with parameters — callback(name, status)
+│   └── 153_CB_Return.js                # Callback as return driver — calculate(a,b,operation)
+│
+├── chapter_17_Promise/                 ✅ Promises — resolve/reject, then/catch/finally, chaining, all/allSettled
+│   ├── 154_Promise.js                  # new Promise(resolve, reject) — the executor, pending state
+│   ├── 155_Promise_REAL_API.js         # .then() runs only on resolve — read response.status
+│   ├── 156_Promise_REAL_API_PART2.js   # .catch() runs only on reject — .then() skipped
+│   ├── 157_Finally.js                  # .finally() always runs — cleanup regardless of outcome
+│   ├── 158_Call_Py_Problem.js          # Promise chaining — flatten callback hell into .then() steps
+│   ├── 159_Promise_ALL.js              # Promise.allSettled — every result, no stop-at-first-fail
+│   └── 160_Promise_IQ.js               # IQ — chaining, throw-in-then, all vs allSettled traps
+│
+├── chapter_18_Async_Await/             ✅ Async / Await — await a promise, try/catch/finally, seq vs parallel
+│   ├── 161_Async.js                    # async + try/catch/finally — await a rejected promise
+│   ├── 162_Aysnc_P2.js                 # await unwraps a promise — the page.goto() pattern
+│   ├── 163_PyODom.js                   # E2E login as flat awaits instead of a .then() chain
+│   ├── 164_Async_Ex.js                 # Playwright test — async ({ page }) + await expect()
+│   ├── 165_AA_Seq.js                   # Sequential awaits — step 2 depends on step 1 (~slow)
+│   ├── 165_AA_Parallel.js              # Parallel — await Promise.allSettled([...]) (~fast)
+│   ├── 166_IQ.js                       # IQ — await order, async returns a promise
+│   └── 167_ACLogin.js                  # Real PW test — test.step, loginAs, toBeHidden
+│
+├── chapter_19_Playwright_Basics/       ✅ Playwright Basics — first real project, page fixture, codegen
+│   ├── tests/
+│   │   ├── example.spec.ts             # First test — page.goto + toHaveTitle on TTACart
+│   │   └── codegen-tta-cart.spec.ts    # Recorded via codegen — fill login, assert error alert
+│   ├── playwright.config.ts            # defineConfig — testDir, headless:false, html reporter, trace
+│   └── package.json                    # @playwright/test dependency
+│
+├── chaptet_20_Typescript_Basics/       ✅ TypeScript Basics — ES modules, export / import
+│   ├── utils.js                        # named exports — BASE_URL, formatTestName
+│   ├── testutils.js                    # named exports — BASE_URL, formatUpperCaseString
+│   ├── logger.js                       # default export (log) + named export (log2)
+│   └── EXPORT_IMPORT/
+│       ├── 168_EXPORT_IMPORT.js        # export keyword intro
+│       ├── 169_Utils.js                # named imports + `as` alias for name clashes
+│       ├── 170_Logger.js               # default import — no braces, any name
+│       └── ExplainDefault.md           # deep-dive: default vs non-default exports
 │
 └── README.md                           👋 You are here
 ```
@@ -2547,10 +2600,11 @@ console.log(add(4, 5));               // 9
 
 ```mermaid
 graph TD
-    subgraph next["Next Up — Strings, Objects, 2D Arrays"]
-        N1[Ch 12: Functions ✅] --> N2[Ch 13: Strings]
-        N2 --> N3[Ch 14: Objects]
-        N3 --> N4[Ch 15: 2D Arrays]
+    subgraph next["Next Up — Advanced JS, TypeScript, Playwright"]
+        N1[Ch 16: Callbacks ✅] --> N2[Ch 17: Promises ✅]
+        N2 --> N3[Ch 18: Async / Await ✅]
+        N3 --> N4[Ch 19: Playwright Basics ✅]
+        N4 --> N5[Ch 20: TypeScript Basics ✅]
     end
 
     style next fill:#fff3e0,stroke:#e65100
@@ -2568,6 +2622,11 @@ graph TD
 - ✅ Chapter 11 — **Arrays (Part 1)**: creation, access, add/remove, splice, search, iterate, transform (files `83`–`91`)
 - ✅ Chapter 11 — **Arrays (Part 2)**: sort (lexicographic trap), slice vs splice, concat/spread/join, `isArray`/`every`/`some` (files `92`–`95`)
 - ✅ Chapter 12 — **Functions**: define + call, four function types, parameter vs argument, template-literal returns, function expression, arrow functions (files `96`–`103`)
+- ✅ Chapter 16 — **Callbacks**: pass-a-function, sync vs async callbacks, callback hell / pyramid of doom (files `143`–`153`)
+- ✅ Chapter 17 — **Promises**: resolve/reject, then/catch/finally, chaining, Promise.all/allSettled (files `154`–`160`)
+- ✅ Chapter 18 — **Async / Await**: await promises, try/catch/finally, sequential vs parallel execution (files `161`–`167`)
+- ✅ Chapter 19 — **Playwright Basics**: first real project, page fixture, codegen, playwright.config.ts
+- ✅ Chapter 20 — **TypeScript Basics**: ES modules, export/import, default vs named exports
 - ✅ **Per-chapter README** — every chapter folder now has its own deep-dive README.md
 
 ---
@@ -2697,6 +2756,6 @@ npx playwright show-trace <trace.zip>    # Open trace viewer
 
 *Code with intent. Test with confidence. Automate with joy.*
 
-— Ayush Kumar & The Testing Academy team
+— Ayush Kumar
 
 </div>
